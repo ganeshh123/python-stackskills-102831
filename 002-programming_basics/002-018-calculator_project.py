@@ -9,7 +9,7 @@ print("Type 'clear' to clear the result\n")
 previous = 0
 run = True
 
-def performMath():
+def perform_math():
     # Required to make variables accessible inside performMath
     global run
     global previous
@@ -38,4 +38,4 @@ def performMath():
             previous = eval(str(previous) + equation)
 
 while run:
-    performMath()
+    perform_math()
