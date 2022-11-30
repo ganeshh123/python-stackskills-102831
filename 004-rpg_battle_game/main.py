@@ -1,3 +1,4 @@
+from colorama import init
 from src.constants import bcolors
 from src.game import enemy_round, init_game, generate_enemies, generate_players, display_stats, player_round
 
@@ -7,6 +8,7 @@ enemies = generate_enemies()
 running = True
 i = 0
 
+init()
 init_game()
 
 while running:
